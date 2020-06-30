@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+:root {
+  --main-bg-color: #f5f8ff;
+  --bar: #ffcc48;
+  --bar-title: #4570de;
+  --soft-text: #8c8ca2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 200px;
+  width: 470px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 10px #bcbccc;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 45px;
+}
+.star-rating {
+  width: 60%;
+  margin: 20px 20% 5px 20%;
+  height: 50px;
+  background-color: var(--main-bg-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.star {
+  font-size: 1.4rem;
+  margin-left: 5px;
+  color: var(--bar);
+}
+.star-rating span {
+  font-size: 0.8rem;
+}
+.container p {
+  font-size: 0.8rem;
+}
+
+.percentage-ratings {
+  margin-top: 40px;
+  position: relative;
+}
+.percentage-ratings div {
+  position: relative;
+}
+.full-bar {
+  width: 50%;
+  height: 17px;
+  margin: 15px 25%;
+  background: var(--main-bg-color);
+  border-radius: 20px;
+}
+
+.full-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -45px;
+  color: var(--bar-title);
+  font-weight: bold;
+}
+.full-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+#five-star::before {
+  content: "5 star";
+}
+#five-star::after {
+  content: "65%";
+}
+#five-star-bar {
+  width: 65%;
+}
+#four-star::before {
+  content: "4 star";
+}
+#four-star::after {
+  content: "15%";
+}
+#four-star-bar {
+  width: 15%;
+}
+
+#three-star::before {
+  content: "3 star";
+}
+#three-star::after {
+  content: "10%";
+}
+#three-star-bar {
+  width: 10%;
+}
+#two-star::before {
+  content: "2 star";
+}
+#two-star::after {
+  content: "7%";
+}
+#two-star-bar {
+  width: 7%;
+}
+#one-star::before {
+  content: "1 star";
+}
+#one-star::after {
+  content: "3%";
+}
+#one-star-bar {
+  width: 3%;
+}
+
+.percentage-ratings span {
+  display: inline;
+}
+.percent-bar {
+  background-color: var(--bar);
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 6px 5px #fff2d2;
+}
+
+.container h2 {
+  font-size: 0.9rem;
+  margin-top: 40px;
+  color: var(--bar-title);
+}
